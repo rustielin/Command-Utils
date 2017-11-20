@@ -10,7 +10,7 @@ load_avgs = 'load_avgs'
 user = sys.argv[1]
 server = 'hive'
 dept = 'cs'
-os.system('curl https://hivemind-data.firebaseapp.com/latest.json > hivemind.json')
+os.system('curl -s https://hivemind-data.firebaseapp.com/latest.json > hivemind.json')
 hivemind_txt = open('hivemind.json', 'r').read()
 hivemind_json = hivemind_txt.replace('\n', '')
 
